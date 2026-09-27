@@ -160,6 +160,16 @@
     background-size: cover; background-position: 78% 30%;
     color: #f4f7f6;
   }
+  /* Celular: foto algo más chica y centrada entre las dos socias, fundida a oscuro abajo */
+  @media (max-width: 600px) {
+    .hero {
+      background-color: #2a1f21;
+      background-image: linear-gradient(rgba(90,58,58,0.5), rgba(90,58,58,0.6)), linear-gradient(to bottom, rgba(42,31,33,0) 62%, #2a1f21 80%), url("hero-socias.jpg");
+      background-size: auto, auto, auto 80%;
+      background-position: center, center, 84% 0;
+      background-repeat: no-repeat;
+    }
+  }
   .hero::before {
     content: ""; position: absolute; inset: 0; pointer-events: none;
     background: linear-gradient(190deg, rgba(36,26,27,0.1) 0%, rgba(36,26,27,0.55) 100%);
